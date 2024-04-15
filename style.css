@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url(assets/fonts/playfair-display/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+  font-family: "PlayfairDisplayBold";
+  src: url(assets/fonts/playfair-display/PlayfairDisplay-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(assets/fonts/roboto/Roboto-Regular.ttf);
+}
+
+* {
+  margin: 0;
+}
+
+header {
+  display: grid;
+  position: relative;
+}
+
+.decoration-start {
+  background-color: #0891b2;
+  width: 100vw;
+  height: 100%;
+
+  clip-path: polygon(0px 0px, 100% 0px, 100% 50%, 0px 100%);
+}
+
+.decoration-start-wrap {
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.24));
+}
+
+.portrait-wrap {
+  position: relative;
+
+  padding: 30px;
+}
+
+.portrait {
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  width: 100%;
+}
+
+.portrait-wrap > h1 {
+  position: absolute;
+  color: white;
+  font-family: "PlayfairDisplay";
+  font-weight: 500;
+  font-size: 15vw;
+  top: 50%;
+  left: 15vw;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.43);
+}
+
+.about-me {
+  margin: 10px;
+  display: grid;
+}
+
+h2 {
+  font-family: "PlayfairDisplayBold";
+  font-weight: 500;
+  font-size: 1.8rem;
+  justify-self: center;
+  margin-bottom: 10px;
+}
+
+p {
+  font-family: "Roboto";
+  color: #565656;
+}
+
+.about-me > .icons {
+  justify-self: center;
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 15px;
+}
+
+.icons > svg {
+  width: auto;
+  height: 25px;
+}
+
+section {
+  margin-top: 40px;
+  display: grid;
+}
+
+h3 {
+  font-family: "PlayfairDisplay";
+  font-weight: 500;
+}
+
+.projects-wrap {
+  display: grid;
+  row-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 350px));
+  justify-self: center;
+}
+
+.project {
+  display: grid;
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.project .screenshot {
+  height: 200px;
+  background-color: #7c75ca;
+}
+
+.project .description {
+  padding: 10px;
+  padding-bottom: 30px;
+  display: grid;
+  row-gap: 10px;
+}
+
+.project .head {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 70px;
+}
+
+.project .icons {
+  width: auto;
+  height: 10px;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+img {
+  display: block;
+}
+
+footer {
+  background-color: #0891b2;
+  color: white;
+}
+
+.contact {
+  display: grid;
+  padding: 20px;
+}
+
+.details {
+  display: grid;
+  row-gap: 3px;
+}
+
+footer p {
+  color: white;
+  font-size: 0.9rem;
+}
+
+h4 {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 500px) {
+}
+
+@media (min-width: 1000px) {
+}
